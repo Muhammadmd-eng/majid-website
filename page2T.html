@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background: color-mix(
+          in lab,
+          rgb(70, 146, 171) 20%,
+          rgb(235, 228, 228) 30%
+        );
+      }
+
+      #hiddenText {
+        display: none;
+        margin-top: 20px;
+        font-size: 18px;
+        color: darkblue;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        background: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+      h1 {
+        text-decoration: underline;
+      }
+      header {
+        animation: fadein 2s ease-in-out;
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+          transform: translatey(-20px);
+        }
+      }
+      to {
+        opacity: 1;
+        transform: translatey(0);
+      }
+      main {
+        opacity: 0;
+        transform: translateX(100px);
+        animation: slideIn 2s ease-out forwards;
+      }
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translatey(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translatey(0);
+        }
+      }
+      h2 p {
+        opacity: 0;
+        transform: translateX(100px);
+        animation: slideOut 2s ease-in forwards;
+      }
+      @keyframes slideOut {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .card {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .card h2 {
+        color: #2f3542;
+        margin-bottom: 15px;
+      }
+      .card p {
+        color: #57606f;
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hmmmmnn, The important Question</h1>
+    </header>
+    <main>
+      <h2>
+        you know we've come quite a long way togeher and I honestly feel like i
+        can tell you anything. You're one of the most important people in my
+        life,and i don't just see you as a friend.
+      </h2>
+      <br />
+      <br />
+      <br />
+      <h2>Tap the button to reveal an important message 👇</h2>
+      <button onclick="revealText()">Reveal Text</button>
+      <div class="card">
+        <h2>
+          <p id="hiddenText">
+            With all sincerity i ask you this : Would you love to be my
+            Bestfriend, please ???
+          </p>
+        </h2>
+      </div>
+      <script>
+        function revealText() {
+          document.getElementById("hiddenText").style.display = "block";
+        }
+      </script>
+    </main>
+    <footer>
+      <h3><a href="Tomi.html">tap to go back to the home page</a></h3>
+    </footer>
+  </body>
+</html>

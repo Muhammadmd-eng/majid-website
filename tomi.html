@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(lightblue, skyblue);
+      }
+      header {
+        font-family: cursive;
+        color: aliceblue;
+        text-align: center;
+        animation: fadein ease-in-out 2s;
+      }
+      h1 {
+        text-align: center;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0;
+      }
+      .card {
+        background: #fff;
+        color: black;
+        width: 250px;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+      }
+      .card:hover {
+      transform: translatey(-10px) scale(1.05);
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+    }
+     .card img:hover {
+      filter: grayscale(0%);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      filter: grayscale(100%);
+      transition: filter o.5s ease;
+      animation: fadein ease-in-out 2s;
+    }
+    footer {
+      padding: 20px;
+      background: rgba(143, 162, 196, 0.6);
+      border-radius: 20px;
+      transform: scale(1.2);
+      text-align: center;
+    }
+    @keyframes fadein {from { opacity: 0;transform: translatey(-20px);}}
+      to {
+        opacity: 1;
+        transform: translatey(0);
+      }
+      .link{
+       background: #9bc6f1;
+       border-radius: 30px;
+       text-align: center;
+      }
+      .link:hover{
+        background: rgb(151, 209, 228);
+         transform: translatey(-5px) scale(1.05);
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+      }
+      @media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    font-size: 16px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>This is Directed To A Very Beautiful Lady</h1>
+      <p>
+        A skillful and understanding person is also a part of her personality
+      </p>
+      <p>And most of all a God fearing lady</p>
+    </header>
+    <!-- <nav>
+        <a href="">click to view</a>
+        <p>striictly Tomi's Eyes</p>
+    </nav>-->
+    <section class="cards">
+      <div class="card">
+        <img src="tomi 1.jpg" alt="tomi's image" />
+        <h4>Screaming Beauty !!!</h4>
+      </div>
+      <div class="card">
+        <img src="tomi 2.jpg" alt="tomi's image" />
+        <h4>Don't Play</h4>
+      </div>
+      <div class="card">
+        <img src="tomi 3.jpg" alt="tomi's image" />
+        <h4>I salute your wonderful parents o, Omoh e no easy</h4>
+      </div>
+      </div>
+    </section>
+    <div>
+      <div class="link">
+    <a href="page3T.html">Tap to view and read composition</a>
+    <br />
+    <br />
+    <a href="page2T.html">Tap to view and read important Question</a>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <h5>
+        <p>I'd really love to get a reply from you in my DM.</p>
+        <p>Your's sicerely.</p>
+      </h5>
+    </footer>
+  </body>
+</html>
